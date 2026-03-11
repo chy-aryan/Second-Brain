@@ -36,7 +36,7 @@ const Modal = (props: {onClick: () => void,setModal: (value: boolean) => void, s
         return;
       }
 
-      await fetch("https://second-brain-be-cr8g.onrender.com/api/v1/addcontent", {
+      await fetch("http://localhost:3000/api/v1/addcontent", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
