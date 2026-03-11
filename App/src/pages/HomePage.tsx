@@ -33,7 +33,7 @@ const HomePage = ()=>{
         return;
       }
 
-      const res = await fetch("http://localhost:3000/api/v1/content", {
+      const res = await fetch("https://second-brain-be-cr8g.onrender.com/api/v1/content", {
         method: "GET",
         headers: {
           "token": token
@@ -92,7 +92,7 @@ const HomePage = ()=>{
         return;
       }
 
-      const res = await fetch(`http://localhost:3000/api/v1/content`, {
+      const res = await fetch(`https://second-brain-be-cr8g.onrender.com/api/v1/content`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -105,7 +105,7 @@ const HomePage = ()=>{
       if (res.ok) {
         // Encode your data as a query parameter
         const encodedData = encodeURIComponent(JSON.stringify(jsonData.data));
-        const shareLink = `http://localhost:5173/share/${userId}?data=${encodedData}`;
+        const shareLink = `https://second-brain-fe-lilac.vercel.app/share/${userId}?data=${encodedData}`;
        
         navigator.clipboard.writeText(shareLink)
         .then(() => {

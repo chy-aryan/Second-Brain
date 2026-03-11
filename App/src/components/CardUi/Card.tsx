@@ -93,7 +93,7 @@ const Card = (props: CardProps) => {
         return;
       }
 
-      const res = await fetch(`http://localhost:3000/api/v1/delete/${props.title}`, {
+      const res = await fetch(`https://second-brain-be-cr8g.onrender.com/api/v1/delete/${props.title}`, {
         method: "Delete",
         headers: {
           "token": token
