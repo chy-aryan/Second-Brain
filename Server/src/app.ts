@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true}))
 dotenv.config();
 app.use(cors({
-  origin: "https://second-brain-fe-lilac.vercel.app/", 
+  origin: "https://second-brain-fe-lilac.vercel.app", 
   credentials: true 
 }));
 app.use(cookieParser());
